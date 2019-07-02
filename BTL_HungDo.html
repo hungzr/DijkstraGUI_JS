@@ -1,0 +1,60 @@
+<head>
+ <meta charset="utf-8">
+ <script type="text/javascript" src="jquery.js"></script>
+ <link rel="stylesheet" type="text/css" href="./jsxgraph.css" />
+ <script type="text/javascript" src="./jsxgraphcore.js"></script>
+ <script type="text/javascript" src="./Script.js"></script>
+ <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+    <h3 style="text-align: center">BTL_Thực tập CNTT</h3></br>
+    <div class="row">
+        <div class="col-md-2" style="text-align: center">
+            <label class="label label-sm">Đường đi</label></br>
+            <p id="Route"></p>
+            <label class="label label-sm">Độ dài quãng đường</label></br>
+            <p id="Length"></p>
+        </br></br>
+
+        </div>
+        <div class="col-md-7 ">
+            <div id="box" class="jxgbox" style="width:700px; height:500px;"></div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label class="label label-sm">Nhập số điểm:</label>
+                <input id="Points" class="input input-sm" type="number " min="0" max="20" value="4" />
+            </div>
+            <div class="form-group">
+                <label class="label label-sm">Nhập số cạnh:</label>
+                <input id="Edges" class="input input-sm" type="number " min="0" max="400" value="5" />
+            </div>
+            <button id="Generate"  class="btn btn-primary">Khởi tạo đồ thị</button>  
+            
+            </br></br></br>
+            <div class="form-group">
+                    <label class="label label-sm">Nhập điểm đầu:</label>
+                    <input id="startPoint" class="input input-sm" type="number " />
+                </div>
+                <div class="form-group">
+                    <label class="label label-sm">Nhập điểm cuối:</label>
+                    <input id="endPoint" class="input input-sm" type="number " />
+                </div>
+                <button id="findWay"  class="btn btn-primary">Tìm đường đi</button>  
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="text-align: center">
+            <h4 >Ma trận đồ thị</h4>
+            <table id="matrix" class="table table-striped table-condensed"></table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</body>
+
+
